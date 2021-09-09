@@ -1,2 +1,2 @@
 # PYTHONBOT.py.pkg
-# @Legendl_Mr_Hacker
+# @lLegend_Mr_Hacker
