@@ -96,3 +96,8 @@ async def info(event):
             string += " "
             LEGENDcount += 1
         await event.reply(string.format(count=LEGENDcount), parse_mode="HTML")
+        
+        
+        
+        
+        
