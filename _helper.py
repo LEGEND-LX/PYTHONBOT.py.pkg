@@ -5,7 +5,7 @@ import requests
 from telethon import functions
 
 from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from PYTHONOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="python ?(.*)", outgoing=True))
@@ -33,7 +33,7 @@ async def yardim(event):
           await event.edit(input_str + " is not a valid plugin!")
 
 
-@bot.on(sudo_cmd(allow_sudo=True, pattern="op ?(.*)"))
+@bot.on(sudo_cmd(allow_sudo=True, pattern="python ?(.*)"))
 async def info(event):
     if event.fwd_from:
         return
@@ -42,7 +42,7 @@ async def info(event):
         string = (
             "♦️Total {count} commands found in {plugincount} sudo plugins of  𝖑𝖊ɠêɳ̃dẞø✞︎\n\n"
         )
-        LEGENDcount = 0
+        PYTHONcount = 0
         plugincount = 0
         for i in sorted(SUDO_LIST):
             plugincount += 1
@@ -50,7 +50,7 @@ async def info(event):
             for iter_list in SUDO_LIST[i]:
                 string += "    " + str(iter_list)
                 string += "\n"
-                PUTHONcount += 1
+                PYTHONcount += 1
             string += "\n"
         if len(string) > 4095:
             data = string.format(count=PYTHONcount, plugincount=plugincount)
@@ -73,13 +73,13 @@ async def info(event):
     if input_str:
         if input_str in SUDO_LIST:
             string = "<b>{count} Commands found in plugin {input_str}:</b>\n\n"
-            LEGENDcount = 0
+            PYTHONcount = 0
             for i in SUDO_LIST[input_str]:
                 string += f"  •  <code>{i}</code>"
                 string += "\n"
-                LEGENDcount += 1
+                PYTHONcount += 1
             await event.reply(
-                string.format(count=LEGENDcount, input_str=input_str), parse_mode="HTML"
+                string.format(count=PYTHONcount, input_str=input_str), parse_mode="HTML"
             )
         else:
             reply = await event.reply(input_str + " is not a valid plugin!")
