@@ -8,14 +8,14 @@ from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
-@bot.on(admin_cmd(pattern="op ?(.*)", outgoing=True))
+@bot.on(admin_cmd(pattern="python ?(.*)", outgoing=True))
 async def yardim(event):
     if event.fwd_from:
         return
     tgbotusername = Config.BOT_USERNAME
     input_str = event.pattern_match.group(1)
-    if tgbotusername is not None or LEGEND_input == "text":
-        results = await event.client.inline_query(tgbotusername, "@LEGEND_Userbot")
+    if tgbotusername is not None or PYTHON_input == "text":
+        results = await event.client.inline_query(tgbotusername, "@PYTHON_Userbot")
         await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
         )
@@ -50,10 +50,10 @@ async def info(event):
             for iter_list in SUDO_LIST[i]:
                 string += "    " + str(iter_list)
                 string += "\n"
-                LEGENDcount += 1
+                PUTHONcount += 1
             string += "\n"
         if len(string) > 4095:
-            data = string.format(count=LEGENDcount, plugincount=plugincount)
+            data = string.format(count=PYTHONcount, plugincount=plugincount)
             key = (
                 requests.post(
                     "https://nekobin.com/api/documents", json={"content": data}
@@ -63,11 +63,11 @@ async def info(event):
                 .get("key")
             )
             url = f"https://nekobin.com/{key}"
-            reply_text = f"All commands of the LEGENDBOT are [here]({url})"
+            reply_text = f"All commands of the PYTHONBOT are [here]({url})"
             await event.reply(reply_text, link_preview=False)
             return
         await event.reply(
-            string.format(count=LEGENDcount, plugincount=plugincount), link_preview=False
+            string.format(count=PYTHONcount, plugincount=plugincount), link_preview=False
         )
         return
     if input_str:
@@ -90,12 +90,12 @@ async def info(event):
         string = "<b>Please specify which plugin do you want help for !!\
             \nNumber of plugins : </b><code>{count}</code>\
             \n<b>Usage:</b> <code>.op plugin name</code>\n\n"
-        LEGENDcount = 0
+        PYTHONcount = 0
         for i in sorted(SUDO_LIST):
             string += "≈ " + f"<code>{str(i)}</code>"
             string += " "
-            LEGENDcount += 1
-        await event.reply(string.format(count=LEGENDcount), parse_mode="HTML")
+            PYTHONcount += 1
+        await event.reply(string.format(count=PYTHONcount), parse_mode="HTML")
         
         
         
