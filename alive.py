@@ -2,7 +2,7 @@ import time
 
 from telethon import version
 from userbot import ALIVE_NAME, StartTime, LEGENDversion
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 async def reply_id(event):
@@ -14,14 +14,14 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎ 🇮🇳"
-LEGEND_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 𝖑𝖊ɠêɳ̃dẞø✞︎"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Legend_Userbot"
+DEFAULTUSER = ALIVE_NAME or "✞︎t͛ẞ̸ PYTHONẞø✞︎ 🇮🇳"
+PYTHON_IMG = Config.ALIVE_PIC
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂-ℓx Choice PYTHONẞø✞︎"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@PYTHON_Userbot"
 
 Legend = bot.uid
 
-mention = f"[{DEFAULTUSER}](tg://user?id={Legend})"
+mention = f"[{DEFAULTUSER}](tg://user?id={Legend-Lx})"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -62,20 +62,25 @@ async def amireallyalive(alive):
         return
     reply_to_id = await reply_id(alive)
 
-    if  LEGEND_IMG:
-        LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
+    if  PYTHON_IMG:
+        PYTHON_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
-        LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"        ♥️ẞø✞︎ ẞ✞︎α✞︎µѕ♥️ \n"
-        LEGEND_caption += f"•⚜️• Øաղ̃ҽ̈ɾ          : {mention}\n\n"
-        LEGEND_caption += f"•📍• 𝖑𝖊ɠêɳ̃dẞø✞︎  : {LEGENDversion}\n"
-        LEGEND_caption += f"•📍• ✞︎ҽ̀lҽ́ƭhøղ̃     : `{version.__version__}`\n"
-        LEGEND_caption += f"•📍• 𝚄ρƭเɱε         : `{uptime}`\n"
-        LEGEND_caption += f"•📍• 𝖦ɾσµρ           : [𝔾ɾσµρ](t.me/Legend_Userbot)\n"
-        LEGEND_caption += f"•📍• 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙   : {CUSTOM_YOUR_GROUP}\n"   
-
+        PYTHON_caption += f"𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭\n"
+        PYTHON_caption += f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
+        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
+        PYTHON_caption += f"║┣⪼ Ⲟⲱⲛⲉʀ     ┣⪼ [ℓєgєи∂-ℓx](t.me/Legend_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼ Ⲋⲧⲁⲧυⲋ      ┣⪼ Ⲟⲛⳑⲓⲛⲉ\n"
+        PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {}\n"
+        PYTHON_caption += f"║┣⪼ Ⳙⲣⲧⲓⲙⲉ      ┣⪼  {}\n"
+        PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ    ┣⪼  {}\n"   
+        PYTHON_caption += f"║┣⪼ Ⲣⲩⲧⲏⲟⲛ      ┣⪼  {}\n"
+        PYTHON_caption += f"║┣⪼ Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {} \n"
+        PYTHON_caption += f"║┣⪼ [✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/PYTHON_USERBOT)\n"
+        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
+        PYTHON_caption += f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
+        
         await alive.client.send_file(
-            alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
+            alive.chat_id, PYTHON_IMG, caption=PYTRHON_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
