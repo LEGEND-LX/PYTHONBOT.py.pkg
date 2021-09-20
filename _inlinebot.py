@@ -158,9 +158,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             ]
  
         elif event.query.user_id == bot.uid and query == "alive":
-            leg_end = alive_txt.format(Config.ALIVE_MSG, legend_mention, LEGENDversion, version.__version__, abuse_m, is_sudo, Config.BOY_OR_GIRL)
+            leg_end = alive_txt.format(Config.ALIVE_MSG, python_mention, PYTHONversion, version.__version__, abuse_m, is_sudo, Config.BOY_OR_GIRL)
             alv_btn = [
-                [Button.url(f"{LEGEND_USER}", f"tg://openmessage?user_id={Legend_Mr_Hacker}")],
+                [Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Legend_Mr_Hacker}")],
                 [Button.url("My Channel", f"https://t.me/{my_channel}"), 
                 Button.url("My Group", f"https://t.me/{my_group}")],
             ]
@@ -175,7 +175,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     ALV_PIC,
                     text=leg_end,
-                    title="LegendBot Alive",
+                    title="PYTHONBOT Alive",
                     buttons=alv_btn,
                     link_preview=False,
                 )
@@ -188,10 +188,10 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 )
 
         elif event.query.user_id == bot.uid and query == "pm_warn":
-            lege_nd = LEGEND_FIRST.format(legend_mention, mssge)
+            pyth_on = PYTHON_FIRST.format(PYTHON_mention, mssge)
             result = builder.photo(
-                file=legend_pic,
-                text=lege_nd,
+                file=python_pic,
+                text=pyth_on,
                 buttons=[
                     [
                         custom.Button.inline("📝 Request 📝", data="req"),
@@ -205,10 +205,10 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 𝙻𝚎𝚐𝚎𝚗𝚍𝙱𝚘𝚝 ⚜**",
+                text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 Python𝙱𝚘𝚝 ⚜**",
                 buttons=[
-                    [Button.url("♥️ 𝚁𝚎𝚙𝚘 ♥", "https://github.com/LEGEND-OS/LEGENDBOT")],
-                    [Button.url("♦️ Deploy ♦️", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT")],
+                    [Button.url("♥️ 𝚁𝚎𝚙𝚘 ♥", "https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8")],
+                    [Button.url("♦️ Deploy ♦️", " ")],
                 ],
             )
 
@@ -223,18 +223,18 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         else:
             result = builder.article(
-                "@LEGEND_Userbot",
-                text="""**Hey! This is [Lêɠêɳ̃dẞø†](https://t.me/its_LegendBot) \nYou can know more about me from the links given below 👇**""",
+                "@PYTHON_Userbot",
+                text="""**Hey! This is [Pythonẞø†](https://t.me/its_PythonBot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Its_LegendBot"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Its_PythonBot"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/Legend_Userbot"
+                            "⚡ GROUP ⚡", "https://t.me/Python_Userbot"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/LEGEND-OS/LEGENDBOT"),
+                            "✨ REPO ✨", "https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8"),
                         custom.Button.url
                     (
                             "🔰 TUTORIAL 🔰", "https://youtu.be/bPzvmaQejNM"
@@ -253,7 +253,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"🔰 This is Lêɠêɳ̃dẞø† PM Security for {legend_mention} to keep away unwanted retards from spamming PM..."
+                f"🔰 This is Pythonẞø† PM Security for {python_mention} to keep away unwanted retards from spamming PM..."
             )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
@@ -263,7 +263,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"✅ **Request Registered** \n\n{legend_mention} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
+                f"✅ **Request Registered** \n\n{python_mention} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
             )
             target = await event.client(GetFullUserRequest(event.query.user_id))
             first_name = html.escape(target.user.first_name)
