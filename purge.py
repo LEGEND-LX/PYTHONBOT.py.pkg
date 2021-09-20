@@ -11,7 +11,7 @@ from telethon.errors import rpcbaseerrors
 
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
 from userbot.utils import register, errors_handler
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 #@register(outgoing=True, pattern="^.purge$")
