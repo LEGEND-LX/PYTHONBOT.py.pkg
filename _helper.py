@@ -5,7 +5,7 @@ import requests
 from telethon import functions
 
 from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
-from PYTHONOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="python ?(.*)", outgoing=True))
@@ -96,8 +96,3 @@ async def info(event):
             string += " "
             PYTHONcount += 1
         await event.reply(string.format(count=PYTHONcount), parse_mode="HTML")
-        
-        
-        
-        
-        
