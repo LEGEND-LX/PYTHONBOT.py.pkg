@@ -20,12 +20,12 @@ from telethon.errors.rpcerrorlist import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.messages import ExportChatInviteRequest
-DEFAULTUSER = ALIVE_NAME or "LEGEND"
+DEFAULTUSER = ALIVE_NAME or "PYTHON-LX"
 from . import * 
-legend_row = Config.BUTTONS_IN_HELP
-legend_emoji1 = Config.EMOJI_IN_HELP1
-legend_emoji2 = Config.EMOJI_IN_HELP2
-legend_pic = Config.PM_PIC or ""
+python_row = Config.BUTTONS_IN_HELP
+python_emoji1 = Config.EMOJI_IN_HELP1
+python_emoji2 = Config.EMOJI_IN_HELP2
+python_pic = Config.PM_PIC or ""
 cstm_pmp = Config.PM_MSG
 ALV_PIC = Config.ALIVE_PIC
 help_pic = Config.AWAKE_PIC or ""
@@ -65,7 +65,7 @@ alive_txt = """
 """
 
 def button(page, modules):
-    Row = legend_row
+    Row = python_row
     Column = 3
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
