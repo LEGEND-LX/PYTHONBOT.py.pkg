@@ -126,6 +126,7 @@ async def get_curr_track(lfmbio):
                 environ["oldartist"] = str(ARTIST)
                 if BIOPREFIX:
                     lfmbio = f"{BIOPREFIX} 🎧: {ARTIST} - {SONG}"
+                    
                 else:
                     lfmbio = f"🎧: {ARTIST} - {SONG}"
                 try:
