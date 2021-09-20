@@ -37,3 +37,4 @@ async def install(event):
 		await a.edit(f"{text}\n**Installed every plugin from the given chat.**")
 		await event.delete()
 		await b.delete()
+		
