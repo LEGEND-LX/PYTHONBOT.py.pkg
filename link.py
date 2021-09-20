@@ -8,7 +8,7 @@ from asyncio import sleep
 from os import remove
 from telethon.errors import BadRequestError, UserAdminInvalidError
 from telethon.errors.rpcerrorlist import UserIdInvalidError
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from telethon.tl.types import (PeerChannel, ChannelParticipantsAdmins,
                                ChatAdminRights, ChatBannedRights,
                                MessageEntityMentionName,
