@@ -73,7 +73,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {mention}\n"
         PYTHON_caption += f"║┣⪼ Ⳙⲣⲧⲓⲙⲉ      ┣⪼  {uptime}\n"
         PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ    ┣⪼  {}\n"   
-        PYTHON_caption += f"║┣⪼ Ⲣⲩⲧⲏⲟⲛ      ┣⪼  {version.__version__}\n"
+        PYTHON_caption += f"║┣⪼ Ⲣⲩⲧⲏⲟⲛ      ┣⪼  {PYTHONversion}\n"
         PYTHON_caption += f"║┣⪼ Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__} \n"
         PYTHON_caption += f"║┣⪼ [✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/PYTHON_USERBOT)\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
