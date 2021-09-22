@@ -99,3 +99,4 @@ async def amireallyalive(alive):
 CmdHelp("𝚋𝚘𝚝𝚜𝚝𝚊𝚝𝚜").add_command(
     'bot', None, 'υѕє αи∂ ѕєє'
 ).add()
+
