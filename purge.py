@@ -160,3 +160,5 @@ CMD_HELP.update({
 \nUsage: Creates a message that selfdestructs in x seconds.\
 \nKeep the seconds under 100 since it puts your bot to sleep.'
 })
+
+
