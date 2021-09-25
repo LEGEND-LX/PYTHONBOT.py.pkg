@@ -461,7 +461,3 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
 
         
-
-
-
-    
