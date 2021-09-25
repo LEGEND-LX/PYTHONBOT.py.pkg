@@ -33,6 +33,7 @@ async def yardim(event):
           await event.edit(input_str + " is not a valid plugin!")
 
 
+        
 @bot.on(sudo_cmd(allow_sudo=True, pattern="python ?(.*)"))
 async def info(event):
     if event.fwd_from:
