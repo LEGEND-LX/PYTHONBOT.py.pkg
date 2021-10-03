@@ -1,7 +1,7 @@
 import time
 
 from telethon import version
-from userbot import ALIVE_NAME, StartTime, LEGENDversion
+from userbot import ALIVE_NAME, StartTime, PYTHONversion
 from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
@@ -17,7 +17,7 @@ async def reply_id(event):
 DEFAULTUSER = ALIVE_NAME or "✞︎t͛ẞ̸ PYTHONẞø✞︎ 🇮🇳"
 PYTHON_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂-ℓx Choice PYTHONẞø✞︎"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@PYTHON_Userbot"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
 
 Legend = bot.uid
 
@@ -65,7 +65,7 @@ async def amireallyalive(alive):
     if  PYTHON_IMG:
         PYTHON_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
-        PYTHON_caption += f"𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭\n"
+        PYTHON_caption += f"______𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭______\n"
         PYTHON_caption += f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"║┣⪼ Ⲟⲱⲛⲉʀ     ┣⪼ [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
@@ -75,7 +75,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ    ┣⪼  {}\n"   
         PYTHON_caption += f"║┣⪼ Ⲣⲩⲧⲏⲟⲛ      ┣⪼  {PYTHONversion}\n"
         PYTHON_caption += f"║┣⪼ Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__} \n"
-        PYTHON_caption += f"║┣⪼ [✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/PYTHON_USERBOT)\n"
+        PYTHON_caption += f"║┣⪼ [✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
         
