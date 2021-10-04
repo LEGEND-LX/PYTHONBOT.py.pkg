@@ -80,7 +80,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
         
         await alive.client.send_file(
-            alive.chat_id, PYTHON_IMG, caption=PYTRHON_caption, reply_to=reply_to_id
+            alive.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
@@ -90,7 +90,7 @@ async def amireallyalive(alive):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
             f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
+            f"🇮🇳 ℓєgєи∂ϐοτ  : `{PYTHONversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
             f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Legend_Mr_Hacker)\n"
