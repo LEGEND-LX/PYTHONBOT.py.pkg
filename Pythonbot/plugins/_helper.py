@@ -5,9 +5,9 @@ import requests
 from telethon import functions
 from . import *
 from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
-perf = "[ †hê Lêɠêɳ̃dẞø† ]"
+perf = "[ I N pythonẞø† ]"
 
 import requests
 from telethon import functions
@@ -16,12 +16,12 @@ from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot, BotInl
 
 
 msg = f"""
-**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 𝙻𝚎𝚐𝚎𝚗𝚍𝙱𝚘𝚝 ⚜**
+**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 Python𝙱𝚘𝚝 ⚜**
 
-  •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/LEGEND-OS/LEGENDBOT)
+  •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8)
   •        [♦️ Deploy ♦️](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT)
 
-  •  ©️ {Legend_channel} ™
+  •  ©️ {python_channel} ™
 """
 botname = Config.BOT_USERNAME
 
@@ -31,14 +31,14 @@ async def repo(event):
     try:
         legend = await bot.inline_query(botname, "repo")
         await legend[0].click(event.chat_id)
-        if event.sender_id == Its_LegendBoy:
+        if event.sender_id == Legendl_Mr_Hacker:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
 
 
-@bot.on(admin_cmd(pattern="op ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="op ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="python ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="python ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -74,7 +74,7 @@ async def _(event):
 
 @bot.on(admin_cmd(pattern="plinfo(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="plinfo(?: |$)(.*)", allow_sudo=True))
-async def legendbott(event):
+async def pythonbott(event):
     if event.fwd_from:
         return
     args = event.pattern_match.group(1).lower()
