@@ -41,7 +41,7 @@ async def info(event):
     input_str = event.pattern_match.group(1)
     if input_str == "text":
         string = (
-            "♦️Total {count} commands found in {plugincount} sudo plugins of  𝖑𝖊ɠêɳ̃dẞø✞︎\n\n"
+            "♦️Total {count} commands found in {plugincount} sudo plugins of  pythonẞø✞︎\n\n"
         )
         PYTHONcount = 0
         plugincount = 0
